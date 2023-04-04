@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Stock Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+  <nav>
+    <div class="navbar-left">
+      <a href="#" class="logo">Crypto Stock Tracker</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="crypto.html" target="_blank">Crypto</a></li>
+      <li><a href="#">Dashboard</a></li>
+    </ul>
+  </nav>
+
+
+  <section class="hero">
+    <video src="herobg.mp4" autoplay loop muted></video>
+    <div class="hero-content">
+      <h1>Welcome to Crypto Stock Tracker</h1>
+      <p>Track your favorite stocks and cryptocurrencies with ease</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+  <h2 class="live-prices">Live Prices</h2>  
+  <div class="container">
+    <div class="coin-price">
+        <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEi32rDKQR2Swi7YfHjDzyZUBGEmxTz77OClnm24SZl7kWuls7fsVCIfAObY_JRJIReQnBWZIPSVfDLSqDvqeu4CCXCoNQIoUGK-OSDUGMtDJFxh9vmU6WGajIgXH4CsR_-sXU0qWbyJTJl7N0BSTB8HcAGSpCJ54G1daZPnU6h2oANo2CTGsbHCoaGJHQ" ></div>
+        <div>
+            <h1>$<span id="bitcoin"></span></h1>
+            <h1>Bitcoin</h1>
+        </div>
+    </div>
+    <div class="coin-price">
+        <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhrUFoHC68rLHQYMV41awqGtoeU6qI-CkSVmcYK-KBCrOvL-jzwLOx8pN-5B8aALsHh1Zc9mmDm8LVQSSpdpsw0v6vrJsv4r9_lv0ic5aYbogc3i3h9mG6ZGMc7g9_cGSRh_soaKmXtpMEOxBFIsmiTa_wticu9T07MbqQ42J9NwowHp8tn8OUIBlhjqA" ></div>
+        <div>
+            <h1>$<span id="litecoin"></span></h1>
+            <h1>Litecoin</h1>
+        </div>
+    </div>
+   
+    <div class="coin-price">
+        <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgfcodOJm7ZIXw2kiqdo5abN4cUvFYgyqpKt91zHI8710ltPK5Ny_S5X93w9LSDsF5jW61frn3C8a_8w2GXu4bf0clzxuJljoQ8n6az5EI5zQOcl5W2LScP-1-41NQwPW5A3JWT9EwejtOnHsd3q2-llUsJJQ3Z74v_2FOPn0TrI2529NS9_hmFbvModw" ></div>
+        <div>
+            <h1>$<span id="ethereum"></span></h1>
+            <h1>Ethereum</h1>
+        </div>
+    </div>
+    <div class="coin-price">
+        <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEj9YzGIFUSMpRoWE4IjGl_o2zpdPkvtUS6jzIgZWEWl7ztYyV20oXu80A52v0R_nXpt_qXVBzxnfse2_pfeIbVHwQSR3oLqqAyMqVqnzJpdbSCBHA2b_zlheiLY3Bb0PYCEXQny7q-FnGE01ZtxVFVC8DbLWW-ZC1PC-gaqL7IC7ZfRxFOZufcv8lcY1g" ></div>
+        <div>
+            <h1>$<span id="dogecoin"></span></h1>
+            <h1>Dogecoin</h1>
+        </div>
+    </div>
+
+</div>
+<section id="personal-dashboard">
+  
+<h2 class="live-prices">Personal Dashboard</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Crypto</th>
+      <th>Units Purchased</th>
+      <th>Invested Value</th>
+      <th>Live Price</th>
+      <th>Current Investment Value($)</th>
+      <th>Profit / Loss</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bitcoin</td>
+      <td>0.006581</td>
+      <td>15000</td>
+      <td id="bitcoin-price"></td>
+      <td id="bitcoin-total"></td>
+      <td id="bitcoin-profit"></td>
+    </tr>
+    <tr>
+      <td>Litecoin</td>
+      <td>1.999773</td>
+      <td>15000</td>
+      <td id="litecoin-price"></td>
+      <td id="litecoin-total"></td>
+      <td id="litecoin-profit"></td>
+    </tr>
+    <tr>
+      <td >Ethereum</td>
+      <td>0.101727</td>
+      <td>15000</td>
+      <td id="ethereum-price"></td>
+      <td id="ethereum-total"></td>
+      <td id="ethereum-profit"></td>
+    </tr>
+    <tr>
+      <td>Dogecoin</td>
+      <td>1875.528</td>
+      <td>15000</td>
+      <td id="dogecoin-price"></td>
+      <td id="dogecoin-total"></td>
+      <td id="dogecoin-profit"></td>
+    </tr>
+  </tbody>
+</table>
+</section>
+<footer>
+  <p>Made by Sameer Kumar Singh</p>
+  <p>Powered by <a href="https://www.coingecko.com/">CoinGecko</a></p>
+  <div class="footer-links">
+    <a href="https://github.com/sameer-kumar-singh">My GitHub</a>
+    <a href="https://www.coingecko.com/en/api">CoinGecko API</a>
+  </div>
+</footer>
+
+    <script src="app.js"></script>  
+  </body>
+  </html>

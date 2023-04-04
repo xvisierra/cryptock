@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+nav {
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin-left: auto;
+}
+
+.nav-links li {
+  margin-right: 30px;
+}
+
+.nav-links a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background-color: #1c1c1c;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+.live-prices {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.container .coin-price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px #ccc;
+  margin: 7px;
+}
+
+.container .coin-price .logo{
+  width: 70px;
+  margin-right: 10px;
+}
+.container .coin-price .logo img{
+  width: 100%;
+}
+.container .coin-price div{
+  display: block;
+}
+.container .coin-price div h1{
+  font-size: 20px;
+}
+table {
+  margin: 50px auto 0;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+#live-prices {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+.personal-dashboard {
+  background-color: #fff;
+  padding: 50px;
+}
+
+footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-links {
+    margin-top: 10px;
+  }
+}
+
