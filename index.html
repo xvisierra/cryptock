@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypto Stock Tracker</title>
+  <title>Cryptock</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -13,12 +13,12 @@
 <body>
   <nav>
     <div class="navbar-left">
-      <a href="#" class="logo">Crypto Stock Tracker</a>
+      <a href="#" class="logo">Cryptock</a>
     </div>
     <ul class="nav-links">
-      <li><a href="stocks.html">Stocks</a></li>
-      <li><a href="crypto.html" target="_blank">Crypto</a></li>
-      <li><a href="#">Dashboard</a></li>
+      <li><a href="https://github.com/xvisierra/cryptock">Github</a></li>
+      <li><a href="https://www.coingecko.com/en/api" target="_blank">Coingecko</a></li>
+      <!---<li><a href="#">Dashboard</a></li> -->
     </ul>
   </nav>
 
@@ -26,9 +26,9 @@
   <section class="hero">
     <video src="herobg.mp4" autoplay loop muted></video>
     <div class="hero-content">
-      <h1>Welcome to Crypto Stock Tracker</h1>
-      <p>Track your favorite stocks and cryptocurrencies with ease</p>
-      <a href="#" class="btn">Get Started</a>
+      <h1>Welcome to Cryptock</h1>
+      <p>Track your favorite Cryptocurrencies with ease</p>
+  <a href="#" class="btn" id="getStartedBtn">Get Started</a>
     </div>
   </section>
   <h2 class="live-prices">Live Prices</h2>  
@@ -72,10 +72,10 @@
     <tr>
       <th>Crypto</th>
       <th>Units Purchased</th>
-      <th>Invested Value</th>
-      <th>Live Price</th>
+      <th>Invested Value($)</th>
+      <th>Live Price($)</th>
       <th>Current Investment Value($)</th>
-      <th>Profit / Loss</th>
+      <th>Profit / Loss($)</th>
     </tr>
   </thead>
   <tbody>
@@ -114,7 +114,7 @@
   </tbody>
 </table>
 </section>
-<footer>
+<!-- <footer>
   <p>Made by Sameer Kumar Singh</p>
   <p>Powered by <a href="https://www.coingecko.com/">CoinGecko</a></p>
   <div class="footer-links">
@@ -122,7 +122,18 @@
     <a href="https://www.coingecko.com/en/api">CoinGecko API</a>
   </div>
 </footer>
-
+-->
+<br><br>
+<p>               </p>
     <script src="app.js"></script>  
+    <script>
+      // JavaScript to handle the button click event
+      document.getElementById('getStartedBtn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default behavior of the link
+  
+        // Scroll to the section with the ID "personal-dashboard" using smooth scrolling
+        document.getElementById('personal-dashboard').scrollIntoView({ behavior: 'smooth' });
+      });
+    </script>
   </body>
   </html>
