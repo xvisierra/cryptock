@@ -26,7 +26,10 @@ var ethTotal = document.getElementById("ethereum-total");
 var dogeTotal = document.getElementById("dogecoin-total");
 
 
-var investedValue = 15000;
+var btcinvestedValue = 496;
+var ltcinvestedValue = 98;
+var dogeinvestedValue = 232;
+var ethinvestedValue = 100;
 
 var liveprice = {
     "async": true,
@@ -48,25 +51,25 @@ $.ajax(liveprice).done(function (response){
     dogePrice.innerHTML = response.dogecoin.usd.toFixed(2);
 
 
-    var bitcoinUnits = 0.53545691;
+    var bitcoinUnits = 0.017;
     var bitcoinCurrentPrice = response.bitcoin.usd;
     var bitcoinTotalValue = bitcoinUnits * bitcoinCurrentPrice;
-    var bitcoinProfitLoss = bitcoinTotalValue - investedValue;
+    var bitcoinProfitLoss = bitcoinTotalValue - btcinvestedValue;
 
-    var litecoinUnits = 162.87699815;
+    var litecoinUnits = 0.73;
     var litecoinCurrentPrice = response.litecoin.usd;
     var litecoinTotalValue = litecoinUnits * litecoinCurrentPrice;
-    var litecoinProfitLoss = litecoinTotalValue - investedValue;
+    var litecoinProfitLoss = litecoinTotalValue - ltcinvestedValue;
 
-    var ethereumUnits = 8.26036622;
+    var ethereumUnits = 0.13;
     var ethereumCurrentPrice = response.ethereum.usd;
     var ethereumTotalValue = ethereumUnits * ethereumCurrentPrice;
-    var ethereumProfitLoss = ethereumTotalValue - investedValue;
+    var ethereumProfitLoss = ethereumTotalValue - ethinvestedValue;
 
-    var dogecoinUnits =151861;
+    var dogecoinUnits =1339;
     var dogecoinCurrentPrice = response.dogecoin.usd;
     var dogecoinTotalValue = dogecoinUnits * dogecoinCurrentPrice;
-    var dogecoinProfitLoss = dogecoinTotalValue - investedValue;
+    var dogecoinProfitLoss = dogecoinTotalValue - dogeinvestedValue;
 
     document.getElementById("bitcoin-total").innerHTML = bitcoinTotalValue.toFixed(2);
     document.getElementById("bitcoin-profit").innerHTML = bitcoinProfitLoss.toFixed(2);
