@@ -7,10 +7,12 @@
   <title>Cryptock  </title>
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
 
 </head>
 
-<body style="background-color: powderblue;">
+<body style="background-color:#123c69;">
   <nav>
     <div class="navbar-left">
       <a href="https://github.com/xvisierra" class="logo">                    Cryptock by Sameer</a>
@@ -31,8 +33,9 @@
   <a href="#" class="btn" id="getStartedBtn">Get Started</a>
     </div>
   </section>
-  <h2 class="live-prices"><b>Live Prices <br><span id="current-date-time"></span></b></h2>
 
+  <section id="canvas" class="blurred-background">
+  <h2 class="live-prices" style="color: #17e9e0;"><b>Live Prices <br><span id="current-date-time"></span></b></h2>
   <div class="container">
     <div class="coin-price">
         <div class="logo"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEi32rDKQR2Swi7YfHjDzyZUBGEmxTz77OClnm24SZl7kWuls7fsVCIfAObY_JRJIReQnBWZIPSVfDLSqDvqeu4CCXCoNQIoUGK-OSDUGMtDJFxh9vmU6WGajIgXH4CsR_-sXU0qWbyJTJl7N0BSTB8HcAGSpCJ54G1daZPnU6h2oANo2CTGsbHCoaGJHQ" ></div>
@@ -63,12 +66,12 @@
             <h1>Dogecoin</h1>
         </div>
     </div>
-
+</div></section>
 </div>
-<section id="personal-dashboard">
-  
-<h2 class="live-prices">Personal Dashboard</h2>
-<table>
+<section id="personal-dashboard" class="blurred-background2">
+<h3 class="live-prices">Personal Dashboard</h3>
+<h1 id="details">*Prices updates every 1 second</h1>
+<table class="material-table">
   <thead>
     <tr>
       <th>Crypto</th>
@@ -81,7 +84,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>Bitcoin</td>
+      <td><a href="https://www.coingecko.com/en/coins/bitcoin"class="material-link" target="_blank">Bitcoin</a></td>
       <td>0.0171</td>
       <td>496</td>
       <td id="bitcoin-price"></td>
@@ -89,7 +92,7 @@
       <td id="bitcoin-profit"></td>
     </tr>
     <tr>
-      <td>Litecoin</td>
+      <td><a href="https://www.coingecko.com/en/coins/litecoin" target="_blank" class="material-link">Litecoin</a></td>
       <td>0.73</td>
       <td>98</td>
       <td id="litecoin-price"></td>
@@ -97,7 +100,7 @@
       <td id="litecoin-profit"></td>
     </tr>
     <tr>
-      <td >Ethereum</td>
+      <td><a href="https://www.coingecko.com/en/coins/ethereum" target="_blank" class="material-link">Ethereum</a></td>
       <td>0.13</td>
       <td>232</td>
       <td id="ethereum-price"></td>
@@ -105,7 +108,7 @@
       <td id="ethereum-profit"></td>
     </tr>
     <tr>
-      <td>Dogecoin</td>
+      <td><a href="https://www.coingecko.com/en/coins/dogecoin" target="_blank" class="material-link">Dogecoin</a></td>
       <td>1339</td>
       <td>100</td>
       <td id="dogecoin-price"></td>
@@ -114,16 +117,16 @@
     </tr>
   </tbody>
 </table>
+<div class="button-container">
+  <button class="material-button refresh-button" onclick="window.location.reload()">
+    Click here to refresh
+  </button>
+  <a class="material-button live-market-button" href="https://www.coingecko.com/" target="_blank">
+    Watch Live Market
+  </a>
+</div>
 </section>
-<!-- <footer>
-  <p>Made by Sameer Kumar Singh</p>
-  <p>Powered by <a href="https://www.coingecko.com/">CoinGecko</a></p>
-  <div class="footer-links">
-    <a href="https://github.com/sameer-kumar-singh">My GitHub</a>
-    <a href="https://www.coingecko.com/en/api">CoinGecko API</a>
-  </div>
-</footer>
--->
+</section>
 <br><br>
 <p>               </p>
     <script src="app.js"></script>  

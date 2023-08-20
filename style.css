@@ -107,11 +107,13 @@ nav {
   color: #1c1c1c;
 }
 .live-prices {
-  font-size: 80px;
-  font-weight: bold;
+  font-size: 48px; /* Adjust the font size */
+  font-weight: 700; /* Bold font weight */
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  color: #86c232; /* Your chosen color */
+  font-family: 'Roboto', sans-serif; /* Apply the Roboto font */
 }
 .container{
   display: flex;
@@ -128,7 +130,9 @@ nav {
   box-shadow: 0 0 3px #ccc;
   margin: 7px;
 }
-
+.coin-price{
+  margin-bottom: 20%;
+}
 .container .coin-price .logo{
   width: 70px;
   margin-right: 10px;
@@ -142,33 +146,7 @@ nav {
 .container .coin-price div h1{
   font-size: 20px;
 }
-table {
-  margin: 50px auto 0;
-  border-collapse: collapse;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-}
 
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ccc;
-}
-
-th {
-  background-color: #1c1c1c;
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
-}
-
-td {
-  text-align: center;
-}
-
-tr:nth-child(even) {
-  background-color: #e6e6e6;
-}
 
 #live-prices {
   background-color: #f5f5f5;
@@ -176,38 +154,144 @@ tr:nth-child(even) {
   margin-bottom: 50px;
 }
 .personal-dashboard {
+  
   background-color: #fff;
   padding: 50px;
 }
 
-footer {
+.fixed-footer {
   background-color: #1c1c1c;
   color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
-.footer-links a {
+.blurred-background {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  z-index: 0;
+}
+
+.blurred-background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('res/money2.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Adjust the blur intensity as needed */
+  opacity: 0.7; /* Adjust the overlay opacity as needed */
+  z-index: -1;
+}
+.blurred-background2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  z-index: 0;
+}
+
+.blurred-background2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('res/money3.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  filter: blur(7px); /* Adjust the blur intensity as needed */
+  opacity: 0.7; /* Adjust the overlay opacity as needed */
+  z-index: -1;
+}
+#details
+{ color: #EDC7B7;
+  text-align: center;
+}
+
+.material-table {
+  margin: 50px auto 0;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+  background-color: #f5f5f5;
+  width: 80%; /* Adjust the width as needed */
+}
+
+.material-table th, .material-table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+
+.material-table th {
+  background-color: #1c1c1c;
   color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.material-table td {
+  text-align: center;
+  color: black;
+}
+
+.material-table tbody tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.material-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
   text-decoration: none;
-  margin-left: 10px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
-.footer-links a:hover {
-  text-decoration: underline;
+.refresh-button {
+  background-color: #1c1c1c;
+  color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
-  footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .footer-links {
-    margin-top: 10px;
-  }
+.live-market-button {
+  background-color: #4CAF50;
+  color: #fff;
 }
 
+.material-button:hover {
+  background-color: #555;
+}
+
+.material-link {
+  color: #2196F3;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.material-link:hover {
+  color: #0D47A1;
+}
